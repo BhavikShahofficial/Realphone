@@ -468,7 +468,7 @@ html{
     height: 100%;
     position: relative;
     background: url(img-css/apple-vision/page14-1.jpg);
-    object-fit: cover;
+    background-size: cover;
 }
 
 .page14-right{
@@ -476,7 +476,7 @@ html{
     height: 100%;
     position: relative;
     background: url(img-css/apple-vision/page14-2.jpg);
-    object-fit: cover;
+    background-size: cover;
 }
 
 #page15{
@@ -766,4 +766,183 @@ footer{
 
 footer>.foot1{
     margin-bottom: 1vw;
+}
+
+/* responsive css */
+
+@media (max-width:1300px){
+    .page-bottom img {
+        width: 40vw;
+    }
+
+    .page3-upper {
+        width: 40%;
+    }
+
+    .page5-right h3 {
+        top: 40%;
+    }
+
+    #page17>p {
+        line-height: 40px;
+        width: 60%;
+    }
+}
+
+@media (max-width:1000px){
+    #page>video {
+        width: 100%;
+    }
+
+    #page3>img {
+        width: 95%;
+    }
+}
+
+@media (max-width:568px){
+    .page-bottom img {
+        width: 80vw;
+    }
+
+    #page1>h1,
+    #page2>h1,
+    .page4-center {
+        font-size: 4.5vw;
+    }
+
+    .page3-upper img {
+        width: 50vw;
+    }
+
+    .page3-upper {
+        width: 60%;
+    }
+
+    .page3-upper h3:nth-child(1){
+        margin-bottom: 20px;
+    }
+
+    .page3-upper-inner {
+      display: inline-block;
+      height: 50%;
+    }
+
+    #page3>button {
+        font-size: 18px;
+    }
+
+    #page5,
+    #page6,
+    #page17,
+    #page21a,
+    #page22a{
+        height: 40vh;
+        margin-top: 0;
+    }
+
+    .page5-right h3 {
+        font-size: 4vw;
+    }
+
+    .page5-left h4 {
+        font-size: 2vw;
+        width: 85%;
+        line-height: 3.5vw;
+    }
+
+    .page5-left>button {
+        font-size: 2.5vw;
+    }
+
+    #page6 h4 {
+        font-size: 4vw;
+    }
+
+    #page6 h1 {
+        font-size: 6vw;
+    }
+
+    #page6 p {
+        font-size: 2.5vw;
+        line-height: 4vw;
+        width: 80%;
+    }
+
+    #page7,
+    #page8,
+    #page9,
+    #page10,
+    #page11,
+    #page12,
+    #page13{
+        display: none;
+    }
+
+    #page14 {
+        flex-direction: column;
+    }
+
+    .page14-left {
+        width: 95%;
+    }
+
+    .page14-right {
+        width: 95%;
+        margin-top: 4px;
+    }
+
+    #page16>img,
+    #page16>h2 {
+        width: 95%;
+    }
+
+    #page16>button {
+        font-size: 4vw;
+    }
+
+    #page17>h4,
+    #page17>h1 {
+        font-size: 7vw;
+        margin-bottom: 4vw;
+    }
+
+    #page17>p {
+        line-height: 20px;
+        width: 90%;
+        font-size: 2.5vw;
+    }
+
+    #page18{
+        display: none;
+    }
+
+    #page19{
+        font-size: 3.5vw;
+    }
+
+    #page19>h5 {
+        width: 95%;
+        line-height: 5vw;
+        margin-top: 1vw;
+    }
+
+    #center-page20 {
+        width: 90%;
+    }
+
+    #page21a>h3,
+    #page22a>h3 {
+        font-size: 5.5vw;
+    }
+
+    #page21a>p,
+    #page22a>p {
+        font-size: 2.6vw;
+        line-height: 4.5vw;
+        width: 80%;
+    }
+
+    footer {
+     font-size: 2vw;
+    }
 }
